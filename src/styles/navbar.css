@@ -1,29 +1,35 @@
+/* Styling for the navigation bar */
 .navbar {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    margin-bottom: 2rem; /* Add space below the navigation bar */
 }
 
+/* Styling for the brand/logo in the navigation bar */
 .navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-weight: bold; /* Make the text bold */
+    font-size: 1.5rem; /* Increase the font size */
 }
 
+/* Styling for the navigation links */
 .nav-link {
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+    font-size: 1.1rem; /* Increase the font size */
+    transition: color 0.3s ease; /* Add a transition effect for color changes */
 }
 
+/* Styling for navigation links on hover */
 .nav-link:hover {
-    color: #007bff;
+    color: #007bff; /* Change the text color to blue on hover */
 }
 
+/* Styling for the active navigation link */
 .nav-link.active {
-    font-weight: 600;
-    color: #007bff !important;
+    font-weight: 600; /* Make the text semi-bold */
+    color: #007bff !important; /* Set the text color to blue and make it important */
 }
 
+/* Responsive styling for screens smaller than 991px */
 @media (max-width: 991px) {
     .navbar-collapse {
-        padding: 1rem 0;
+        padding: 1rem 0; /* Add padding around the collapsed navigation bar */
     }
 }

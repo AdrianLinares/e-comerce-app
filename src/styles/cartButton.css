@@ -1,8 +1,10 @@
+/* Styling for the cart button */
 .cart-button {
-    padding: 8px;
-    transition: transform 0.2s ease-in-out;
+    padding: 8px; /* Add padding inside the button */
+    transition: transform 0.2s ease-in-out; /* Add a transition effect for scaling */
 }
 
+/* Styling for the cart button on hover */
 .cart-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Scale the button up slightly on hover */
 }

@@ -1,144 +1,165 @@
+/* Container for the shopping list page content */
 .shopping-list-container {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* Set the maximum width of the container */
+    margin: 2rem auto; /* Center the container horizontally and add vertical margin */
+    padding: 1rem; /* Add padding around the container */
+    background-color: #ffffff; /* Set the background color to white */
+    border-radius: 8px; /* Round the corners of the container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
 
+/* Styling for the empty cart message */
 .empty-cart {
-    text-align: center;
-    padding: 3rem;
-    color: #6c757d;
-    background-color: #f8f9fa;
-    border-radius: 8px;
+    text-align: center; /* Center the text */
+    padding: 3rem; /* Add padding around the message */
+    color: #6c757d; /* Set the text color to a muted gray */
+    background-color: #f8f9fa; /* Set the background color to a light gray */
+    border-radius: 8px; /* Round the corners of the message box */
 }
 
+/* Styling for the table displaying the shopping list */
 .table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 2rem;
+    width: 100%; /* Make the table take up the full width of its container */
+    border-collapse: collapse; /* Collapse table borders into a single border */
+    margin-bottom: 2rem; /* Add space below the table */
 }
 
+/* Styling for table headers and cells */
 .table th,
 .table td {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid #dee2e6;
+    padding: 1rem; /* Add padding inside table headers and cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #dee2e6; /* Add a bottom border to separate rows */
 }
 
+/* Styling for table headers */
 .table th {
-    background-color: #f8f9fa;
-    font-weight: 600;
-    color: #495057;
+    background-color: #f8f9fa; /* Set the background color to a light gray */
+    font-weight: 600; /* Make the text bold */
+    color: #495057; /* Set the text color to a dark gray */
 }
 
+/* Styling for quantity controls */
 .quantity-controls {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically in the center */
+    gap: 0.5rem; /* Add space between controls */
 }
 
+/* Styling for the amount display in quantity controls */
 .amount-display {
-    min-width: 2.5rem;
-    text-align: center;
-    font-weight: 500;
+    min-width: 2.5rem; /* Set a minimum width */
+    text-align: center; /* Center the text */
+    font-weight: 500; /* Make the text semi-bold */
 }
 
+/* Styling for buttons */
 .btn {
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    border: 1px solid transparent;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    padding: 0.5rem 1rem; /* Add padding inside the button */
+    border-radius: 4px; /* Round the corners of the button */
+    border: 1px solid transparent; /* Set a transparent border */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    transition: all 0.2s ease-in-out; /* Add a transition effect */
 }
 
+/* Styling for disabled buttons */
 .btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+    opacity: 0.5; /* Reduce opacity */
+    cursor: not-allowed; /* Change the cursor to indicate the button is disabled */
 }
 
+/* Styling for outline primary buttons */
 .btn-outline-primary {
-    color: #0d6efd;
-    border-color: #0d6efd;
-    background-color: transparent;
+    color: #0d6efd; /* Set the text color to blue */
+    border-color: #0d6efd; /* Set the border color to blue */
+    background-color: transparent; /* Set the background to transparent */
 }
 
+/* Hover effect for outline primary buttons */
 .btn-outline-primary:hover:not(:disabled) {
-    color: #fff;
-    background-color: #0d6efd;
+    color: #fff; /* Change the text color to white */
+    background-color: #0d6efd; /* Change the background color to blue */
 }
 
+/* Styling for danger buttons */
 .btn-danger {
-    color: #fff;
-    background-color: #dc3545;
-    border-color: #dc3545;
+    color: #fff; /* Set the text color to white */
+    background-color: #dc3545; /* Set the background color to red */
+    border-color: #dc3545; /* Set the border color to red */
 }
 
+/* Hover effect for danger buttons */
 .btn-danger:hover {
-    background-color: #bb2d3b;
-    border-color: #b02a37;
+    background-color: #bb2d3b; /* Darken the background color */
+    border-color: #b02a37; /* Darken the border color */
 }
 
+/* Styling for primary buttons */
 .btn-primary {
-    color: #fff;
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    color: #fff; /* Set the text color to white */
+    background-color: #0d6efd; /* Set the background color to blue */
+    border-color: #0d6efd; /* Set the border color to blue */
 }
 
+/* Hover effect for primary buttons */
 .btn-primary:hover {
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
+    background-color: #0b5ed7; /* Darken the background color */
+    border-color: #0a58ca; /* Darken the border color */
 }
 
+/* Styling for large buttons */
 .btn-lg {
-    padding: 0.75rem 1.5rem;
-    font-size: 1.125rem;
+    padding: 0.75rem 1.5rem; /* Add padding inside the button */
+    font-size: 1.125rem; /* Increase the font size */
 }
 
+/* Styling for the total row in the table */
 .total-row {
-    font-weight: 600;
-    background-color: #f8f9fa;
+    font-weight: 600; /* Make the text bold */
+    background-color: #f8f9fa; /* Set the background color to a light gray */
 }
 
+/* Styling for the total amount in the table */
 .total-amount {
-    text-align: right;
-    color: #0d6efd;
-    font-size: 1.25rem;
+    text-align: right; /* Align the text to the right */
+    color: #0d6efd; /* Set the text color to blue */
+    font-size: 1.25rem; /* Increase the font size */
 }
 
+/* Styling for the checkout section */
 .checkout-section {
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align items to the end of the container */
+    padding: 1rem 0; /* Add padding around the section */
 }
 
+/* Responsive styling for screens smaller than 768px */
 @media (max-width: 768px) {
     .table {
-        display: block;
-        overflow-x: auto;
+        display: block; /* Make the table block-level */
+        overflow-x: auto; /* Add horizontal scrolling */
     }
 
     .quantity-controls {
-        flex-wrap: nowrap;
+        flex-wrap: nowrap; /* Prevent wrapping of controls */
     }
 
     .btn {
-        padding: 0.375rem 0.75rem;
+        padding: 0.375rem 0.75rem; /* Adjust padding for smaller screens */
     }
 }
 
+/* Styling for print media */
 @media print {
     .shopping-list-container {
-        box-shadow: none;
+        box-shadow: none; /* Remove the box shadow */
     }
 
     .btn {
-        display: none;
+        display: none; /* Hide buttons */
     }
 
     .checkout-section {
-        display: none;
+        display: none; /* Hide the checkout section */
     }
 }

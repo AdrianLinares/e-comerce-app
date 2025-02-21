@@ -1,16 +1,20 @@
+// Import necessary hooks and context
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import "../styles/shoppingList.css";
 
+// Define the ShoppingList component
 export const ShoppingList = () => {
+    // Get values from CartContext
     const {
-        shoppingList,
-        removeShopping,
-        riseAmount,
-        reduceAmount,
-        cartTotal,
+        shoppingList, // List of items in the cart
+        removeShopping, // Function to remove an item from the cart
+        riseAmount, // Function to increase the quantity of an item
+        reduceAmount, // Function to decrease the quantity of an item
+        cartTotal, // Total cost of items in the cart
     } = useContext(CartContext);
 
+    // Display a message if the cart is empty
     if (!shoppingList.length) {
         return (
             <div className="empty-cart">
@@ -19,6 +23,7 @@ export const ShoppingList = () => {
         );
     }
 
+    // Render the shopping list
     return (
         <div className="shopping-list-container">
             <table className="table">
@@ -31,6 +36,7 @@ export const ShoppingList = () => {
                     </tr>
                 </thead>
                 <tbody>
+                    {/* Map through the shopping list and render each item */}
                     {shoppingList.map((item) => (
                         <tr key={item.id}>
                             <td>{item.title}</td>
@@ -64,6 +70,7 @@ export const ShoppingList = () => {
                             </td>
                         </tr>
                     ))}
+                    {/* Render the total cost row */}
                     <tr className="total-row">
                         <th colSpan="2">Total:</th>
                         <td colSpan="2" className="total-amount">
@@ -73,6 +80,7 @@ export const ShoppingList = () => {
                 </tbody>
             </table>
 
+            {/* Render the checkout button */}
             <div className="checkout-section">
                 <button
                     className="btn btn-primary btn-lg"

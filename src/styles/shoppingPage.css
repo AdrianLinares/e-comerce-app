@@ -1,35 +1,41 @@
+/* Container for the shopping page content */
 .shopping-container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 20px; /* Add padding around the container */
+    max-width: 1200px; /* Set the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
 }
 
+/* Header section of the shopping page */
 .shopping-header {
-    text-align: center;
-    margin-bottom: 2rem;
+    text-align: center; /* Center the text inside the header */
+    margin-bottom: 2rem; /* Add space below the header */
 }
 
+/* Grid layout for displaying products */
 .products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Create responsive columns */
+    gap: 2rem; /* Add space between grid items */
+    padding: 1rem; /* Add padding around the grid */
 }
 
+/* Horizontal divider line */
 .divider {
-    margin: 1rem 0;
-    border: 0;
-    border-top: 1px solid #eee;
+    margin: 1rem 0; /* Add space above and below the divider */
+    border: 0; /* Remove default border */
+    border-top: 1px solid #eee; /* Add a top border with light color */
 }
 
+/* Styling for error messages */
 .error-message {
-    color: #dc3545;
-    text-align: center;
-    padding: 2rem;
+    color: #dc3545; /* Set the text color to red */
+    text-align: center; /* Center the text */
+    padding: 2rem; /* Add padding around the message */
 }
 
+/* Styling for loading messages */
 .loading {
-    text-align: center;
-    padding: 2rem;
-    color: #666;
+    text-align: center; /* Center the text */
+    padding: 2rem; /* Add padding around the message */
+    color: #666; /* Set the text color to gray */
 }
